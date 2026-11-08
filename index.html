@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS SIS | Movimento Feminino</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuração Customizada do Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'asis-bg': '#fcf9f2',      /* Bege claro */
+                        'asis-text': '#4a3b32',    /* Marrom escuro */
+                        'asis-accent': '#c28b75',  /* Terracota suave */
+                        'asis-sub': '#8c7a6b',     /* Marrom médio */
+                        'asis-card': '#f5f0e6',    /* Bege para cards */
+                        'whatsapp': '#25D366'
+                    },
+                    fontFamily: {
+                        'playfair': ['"Playfair Display"', 'serif'],
+                        'montserrat': ['"Montserrat"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased selection:bg-asis-accent selection:text-white">
+
+    <!-- Navbar -->
+    <header class="fixed w-full top-0 z-40 transition-all duration-300 bg-asis-bg/90 backdrop-blur-md border-b border-transparent" id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            
+            <a href="#home" class="flex flex-col group no-underline">
+                <span class="font-playfair text-3xl font-bold tracking-widest text-asis-text group-hover:text-asis-accent transition-colors leading-none">
+                    AS SIS
+                </span>
+                <span class="font-montserrat text-[9px] text-asis-accent uppercase tracking-[0.25em] font-semibold mt-1 leading-none">
+                    Movimento Feminino
+                </span>
+            </a>
+            
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-xs font-semibold uppercase tracking-widest text-asis-sub hover:text-asis-accent transition-colors">Início</a>
+                <a href="#pilares" class="text-xs font-semibold uppercase tracking-widest text-asis-sub hover:text-asis-accent transition-colors">Pilares</a>
+                <a href="https://instagram.com/as.sisoficial" target="_blank" class="flex items-center justify-center w-10 h-10 rounded-full bg-asis-accent/10 text-asis-accent hover:bg-asis-accent hover:text-white transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="hero-bg"></div>
+        
+        <div class="max-w-4xl mx-auto px-6 text-center z-10">
+            <div class="reveal">
+                <span class="inline-flex items-center gap-2 py-1.5 px-4 rounded-full bg-white border border-asis-accent/20 text-asis-text text-xs font-semibold uppercase tracking-widest mb-8 shadow-sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-asis-accent"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    Restaurando Identidades
+                </span>
+            </div>
+            
+            <h1 class="reveal reveal-delay-1 text-5xl md:text-7xl font-playfair font-normal leading-[1.1] mb-6 text-asis-text">
+                Toda mulher tem uma <br class="hidden md:block">
+                <span class="italic text-asis-accent font-medium">história.</span>
+            </h1>
+            
+            <p class="reveal reveal-delay-2 text-lg md:text-xl text-asis-sub font-light max-w-2xl mx-auto mb-10 leading-relaxed">
+                Nenhuma precisa ser prisioneira dela. Rompendo ciclos. Você não nasceu apenas para sobreviver.
+            </p>
+            
+            <div class="reveal reveal-delay-3 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/55279989098929" target="_blank" class="px-8 py-4 rounded-full bg-asis-text text-white font-semibold hover:bg-asis-accent transition-all duration-300 shadow-lg hover:-translate-y-1 flex items-center justify-center gap-2">
+                    Falar com AS SIS
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pilares Section -->
+    <section id="pilares" class="py-24 bg-asis-card relative border-t border-asis-accent/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl md:text-5xl font-playfair mb-4 text-asis-text">Nossos Pilares</h2>
+                <div class="w-16 h-0.5 bg-asis-accent mx-auto"></div>
+                <p class="mt-6 text-asis-sub max-w-2xl mx-auto leading-relaxed">Quatro caminhos desenhados para fortalecer, curar e impulsionar mulheres em sua jornada.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="reveal reveal-delay-1 bg-white rounded-3xl p-8 border border-asis-accent/10 hover:-translate-y-2 hover:shadow-xl hover:shadow-asis-accent/5 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-asis-bg text-asis-accent flex items-center justify-center mb-6 shadow-sm group-hover:bg-asis-accent group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-semibold mb-3 text-asis-text">Podcast</h3>
+                    <p class="text-sm text-asis-sub leading-relaxed">Conversas profundas sobre os desafios e belezas de ser mulher. Episódios que quebram tabus.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="reveal reveal-delay-2 bg-white rounded-3xl p-8 border border-asis-accent/10 hover:-translate-y-2 hover:shadow-xl hover:shadow-asis-accent/5 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-asis-bg text-asis-accent flex items-center justify-center mb-6 shadow-sm group-hover:bg-asis-accent group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-semibold mb-3 text-asis-text">Encontros</h3>
+                    <p class="text-sm text-asis-sub leading-relaxed">Momentos de conexão. Uma rede de apoio segura onde você não está sozinha. Juntas somos mais fortes.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="reveal reveal-delay-3 bg-white rounded-3xl p-8 border border-asis-accent/10 hover:-translate-y-2 hover:shadow-xl hover:shadow-asis-accent/5 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-asis-bg text-asis-accent flex items-center justify-center mb-6 shadow-sm group-hover:bg-asis-accent group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-semibold mb-3 text-asis-text">Quem Somos</h3>
+                    <p class="text-sm text-asis-sub leading-relaxed">Nossa essência e propósito. Descubra a raiz do nosso movimento e as histórias das fundadoras.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="reveal reveal-delay-4 bg-white rounded-3xl p-8 border border-asis-accent/10 hover:-translate-y-2 hover:shadow-xl hover:shadow-asis-accent/5 transition-all duration-300 group">
+                    <div class="w-14 h-14 rounded-2xl bg-asis-bg text-asis-accent flex items-center justify-center mb-6 shadow-sm group-hover:bg-asis-accent group-hover:text-white transition-colors">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
+                    </div>
+                    <h3 class="text-2xl font-playfair font-semibold mb-3 text-asis-text">Mentoria</h3>
+                    <p class="text-sm text-asis-sub leading-relaxed">Acompanhamento direcionado para ajudar você a escrever uma nova história e florescer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-asis-text text-white py-16 border-t-[4px] border-asis-accent">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col items-center">
+            <div class="flex flex-col items-center mb-8 text-center reveal">
+                <span class="font-playfair text-3xl font-bold tracking-wider text-white mb-1">AS SIS</span>
+                <span class="font-montserrat text-[10px] uppercase tracking-[0.3em] text-asis-accent font-medium">Movimento Feminino</span>
+            </div>
+
+            <p class="text-center text-sm font-light text-white/70 max-w-md mb-8 reveal reveal-delay-1 leading-relaxed">
+                Toda história pode ter um novo começo. Você não está sozinha.
+            </p>
+
+            <a href="https://instagram.com/as.sisoficial" target="_blank" rel="noopener noreferrer" 
+               class="reveal reveal-delay-2 flex items-center gap-3 px-6 py-3 rounded-full bg-transparent border border-white/30 text-white hover:bg-white hover:text-asis-text transition-all duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                <span class="font-medium text-sm">@as.sisoficial</span>
+            </a>
+
+            <div class="w-full max-w-md h-px bg-white/10 mt-12 mb-6 reveal reveal-delay-3"></div>
+            <p class="text-xs text-white/40 text-center font-light reveal reveal-delay-3">
+                &copy; 2026 AS SIS. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Botões Flutuantes -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-4 items-end">
+        <!-- Botão Chat IA -->
+        <button id="chat-toggle-btn" class="bg-white border border-asis-accent/30 text-asis-accent p-4 rounded-full shadow-lg hover:scale-110 hover:bg-asis-accent hover:text-white transition-all flex items-center justify-center" aria-label="Abrir Assistente Virtual">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/>
+            </svg>
+        </button>
+
+        <!-- Botão WhatsApp -->
+        <a href="https://wa.me/55279989098929" target="_blank" rel="noopener noreferrer" class="bg-whatsapp text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center btn-whatsapp" aria-label="Falar no WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c-.003 1.396.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Janela de Chatbot IA -->
+    <div id="chat-window" class="fixed bottom-24 right-6 w-80 sm:w-96 bg-white rounded-2xl shadow-2xl border border-asis-accent/10 flex-col overflow-hidden z-50 transition-all duration-300 transform scale-95 opacity-0 pointer-events-none origin-bottom-right" style="height: 500px; max-height: 80vh;">
+        <!-- Cabeçalho do Chat -->
+        <div class="bg-asis-bg px-5 py-4 border-b border-asis-accent/10 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-asis-accent flex items-center justify-center text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 8V4H8"></path>
+                        <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+                        <path d="M2 14h2"></path>
+                        <path d="M20 14h2"></path>
+                        <path d="M15 13v2"></path>
+                        <path d="M9 13v2"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h4 class="font-playfair font-semibold text-asis-text text-sm">Assistente AS SIS</h4>
+                    <p class="text-[10px] text-asis-accent uppercase tracking-wider">Acolhimento com IA</p>
+                </div>
+            </div>
+            <button id="chat-close-btn" class="text-asis-sub hover:text-asis-text transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+
+        <!-- Área de Mensagens -->
+        <div id="chat-messages" class="flex-1 overflow-y-auto p-4 space-y-4 bg-asis-bg/50 flex flex-col">
+            <div class="flex gap-3">
+                <div class="w-6 h-6 rounded-full bg-asis-accent shrink-0 flex items-center justify-center mt-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path></svg>
+                </div>
+                <div class="bg-white border border-asis-accent/10 rounded-2xl rounded-tl-none p-3 text-sm text-asis-text shadow-sm leading-relaxed">
+                    Olá! Sou a assistente virtual do AS SIS. Como posso te ajudar na sua jornada hoje? Sinta-se à vontade para perguntar sobre a Mentoria, nossos Pilares ou apenas desabafar. 🤎
+                </div>
+            </div>
+        </div>
+
+        <!-- Área de Input -->
+        <div class="p-3 bg-white border-t border-asis-accent/10">
+            <div class="flex items-end gap-2 bg-asis-bg border border-asis-accent/20 rounded-xl px-3 py-2 focus-within:border-asis-accent/50 transition-colors">
+                <textarea id="chat-input" rows="1" class="w-full bg-transparent text-sm text-asis-text placeholder-asis-sub focus:outline-none resize-none max-h-24 overflow-y-auto" placeholder="Digite sua mensagem..."></textarea>
+                <button id="chat-send-btn" class="text-asis-accent hover:text-asis-text transition-colors p-1 shrink-0" aria-label="Enviar mensagem">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Externo -->
+    <script src="script.js"></script>
+</body>
+</html>
